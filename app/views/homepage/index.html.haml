@@ -1,6 +1,12 @@
 %h1 Timeline
 
-- @tweets.each do |tweet|
+- @results.each do |result|
   .tweet
-    = tweet.text
+    %p
+      = image_tag(result[:profile_image])
+      - result[:image_urls].each do |image|
+        - if Net::HTTP.get_response(URI.parse(image)).code == '200'
+          = image_tag(image, height: '100')
 
+    %p.tweet_text
+      = result[:text]
