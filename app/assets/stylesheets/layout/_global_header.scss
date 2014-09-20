@@ -1,0 +1,70 @@
+.global-header {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.header-wrapper {
+  @extend .cf;
+}
+
+.header-save {
+  font-size: 60px;
+}
+
+.header-date {
+  font-size: 99px;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.header-title {
+  font-size: 56px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: bold;
+  float: left;
+}
+
+.header-nav {
+  float: right;
+}
+
+.header-site-nav {
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .header-save {
+    font-size: 37px;
+  }
+
+  .header-date {
+    font-size: 61px;
+  }
+
+  .header-title {
+    font-size: 34px;
+  }
+
+  .header-nav {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-save {
+    font-size: 20px;
+  }
+
+  .header-date {
+    font-size: 33px;
+  }
+
+  .header-title {
+    font-size: 19px;
+  }
+
+  .header-nav {
+    font-size: 8px;
+  }
+}

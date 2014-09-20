@@ -1,0 +1,33 @@
+.register_form {
+  .controlgroup {
+    margin-bottom: 20px;
+
+    label {
+      display: inline-block;
+      width: 200px;
+    }
+
+    input {
+      line-height: 23px;
+      width: 270px;
+    }
+  }
+
+  .btn--small {
+    margin-left: 216px;
+  }
+
+  .register {
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .register_form {
+    font-size: 11px;
+
+    .btn--small {
+      margin-left: 0;
+    }
+  }
+}
