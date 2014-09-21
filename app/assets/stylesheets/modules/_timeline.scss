@@ -1,7 +1,88 @@
+h1 {
+  font-size: 67px;
+  margin-bottom: 0px;
+}
+
 .tweet {
+  font-size: 18px;
+  line-height: 22px;
+  height: 360px;
   margin-bottom: 10px;
 
   .tweet_text {
     height: 40px;
   }
+
+  .track_image, .track_details{
+    float: left;
+    height: 375px;
+  }
+
+  .track_details {
+    width: 300px;
+    margin-left: 30px;
+  }
+}
+
+.user {
+  // padding-top: 10px;
+  width: 300px;
+  height: 50px;
+  margin-top: 6px;
+  margin-bottom: 25px;
+}
+
+.avatar_box {
+  float: left;
+  border: 2px solid #81b71a;
+  width: 58px;
+  height: 58px;
+  -webkit-border-radius: 50%; /* Can also be 55px */
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+ }
+
+.avatar_box img {
+  margin: 5px;
+  -webkit-border-radius: 50%; /* Can also be 50px */
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+ }
+
+.user_name {
+  padding-top: 18px;
+  padding-left: 75px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.user_name a:hover {
+  color: #81b71a;
+}
+
+.track_name {
+  color: #81b71a;
+}
+
+.update {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.update_button {
+  background-color:#8cc21f;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:16px;
+  padding:6px 30px;
+  text-decoration:none;
+  // text-shadow:0px 1px 1px #2f6627;
+}
+
+a.update_button:hover {
+  color: white;
 }

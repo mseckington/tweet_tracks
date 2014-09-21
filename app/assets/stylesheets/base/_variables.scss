@@ -1,18 +1,18 @@
 // Typography, vertical rhythm and modular scale
-$base-font-size: 16px;
+$base-font-size: 18px;
 $base-line-height: 1.5;
 $ratio: 1.2; // Perfect fourth
 
 // Grid config
-$base-spacing-unit: 16px;
+$base-spacing-unit: 20px;
 $half-spacing-unit: $base-spacing-unit / 2;
 
 // Colors
-$text-color: #222;
+$text-color: #2F2F2F;
 $background-color: #fbfbfb;
 
-$selected-text-color: darken($text-color, 15%);
+$selected-text-color: #2F2F2F;
 $selected-background-color: darken($background-color, 15%);
 
-$link-color: black;
-$link-color-hover: black;
+$link-color: #2F2F2F;
+$link-color-hover: #81b71a;

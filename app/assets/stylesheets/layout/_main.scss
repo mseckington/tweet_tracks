@@ -7,7 +7,7 @@ html {
 body {
   color: $text-color;
   background-color: $background-color;
-  font-family: 'Monaco', cursive;
+  font-family: 'Titillium Web', cursive;
 }
 
 
@@ -32,7 +32,7 @@ img {
 
 
 .main {
-  max-width: 801px;
+  max-width: 651px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -52,12 +52,6 @@ a {
   &:focus {
     text-decoration: none;
   }
-}
-
-p {
-  font-family: Helvetica;
-  font-size: 18px;
-  line-height: 20px;
 }
 
 .btn {
