@@ -2,7 +2,8 @@
 
 Tweet Tracks is a hack created for Hackference 2014, showing a Spotify playlist based on your tweets. 
 
-It uses the dataTxt api to extract entities (places, people, events, etc) from tweets and uses those keywords to find tracks on Spotify.
+It uses the dataTxt api to extract entities (places, people, events, etc) from tweets and uses those keywords to find tracks on Spotify. The first tab 'Home' displays the tracks based on my Home Timeline tweets, while the 'Search' tab gives you the option to search for any Twitter user.
 
-https://pbs.twimg.com/media/ByD4Q3yIMAAFRzT.png
+http://pbs.twimg.com/media/ByD4Q3yIMAAFRzT.png
 
+To run the app, you need to set environment variables with your Twitter keys and your Dandelion keys.
