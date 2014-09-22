@@ -1,13 +1,13 @@
-%h1 Timeline Playlist
+%h1 Tweet Tracks
 
 %ul.nav.nav--global
   %li
-    = link_to "Home", '/', class: (current_page?('/') ? "current" : "")
+    = link_to "Home", '/', class: "current"
   %li
-    = link_to "Search", '/'
+    = link_to "Search", search_path
 
 %p.update
-  = link_to "Update playlist", '/', class: 'update_button'
+  = link_to "Update playlist", reload_path, class: 'update_button'
 
 - @tweets.each do |tweet|
   .tweet
@@ -23,6 +23,10 @@
 
       %div
         = tweet.text
+
+      / %p
+      /   Keyword:
+      /   = tweet.label
 
       %h3
         Track:

@@ -1,0 +1,49 @@
+%h1 Tweet Tracks
+
+%ul.nav.nav--global
+  %li
+    = link_to "Home", '/'
+  %li
+    = link_to "Search", search_path, class: "current"
+
+= form_tag(new_search_path) do
+  .controlgroup
+    = search_field_tag :user, params[:user]
+    / %p.update
+    = button_tag "Search", class: 'update_button'
+
+- if @searchword.present? && @tweets.present?
+  %h2
+    Results for
+    = link_to "@#{@searchword}", "https://twitter.com/#{@searchword}"
+
+  - @tweets.each do |tweet|
+    .tweet
+      .track_image
+        / = image_tag(tweet.track_image, height: 250)
+        <iframe src="https://embed.spotify.com/?uri=spotify:track:#{tweet[:spotify_id]}" width="250" height="330" frameborder="0" allowtransparency="true"></iframe>
+      .track_details
+        .user
+          .avatar_box
+            = image_tag(tweet[:user_image])
+          .user_name
+            = link_to "@#{tweet[:user_name]}", "https://twitter.com/#{tweet[:user_name]}"
+
+        %div
+          = tweet[:text]
+
+        / %p
+        /   Keyword:
+        /   = tweet.label
+
+        %h3
+          Track:
+          .track_name
+            = tweet[:track_name]
+        %h3
+          Artist:
+          .track_name
+            = tweet[:track_artist]
+- elsif @searchword.present? && !@tweets.present?
+  %h2
+    No results found
