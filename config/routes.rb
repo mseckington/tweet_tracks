@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/search', to: 'homepage#search'
   post '/search', to: 'homepage#search', as: 'new_search'
 
+  get '/about', to: 'homepage#about'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
