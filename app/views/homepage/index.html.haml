@@ -8,13 +8,17 @@
   %li
     = link_to "About", about_path
 
-%p.update
-  = link_to "Update playlist", reload_path, class: 'update_button'
+.update
+  .avatar_box
+    = image_tag("https://pbs.twimg.com/profile_images/483000143600685056/xdFJ3p4e_normal.jpeg")
+  .hack_description
+    This is a Spotify playlist generated from tweets in
+    = link_to "@mseckington's", "https://twitter.com/mseckington"
+    Twitter home timeline.
 
 - @tweets.each do |tweet|
   .tweet
     .track_image
-      / = image_tag(tweet.track_image, height: 250)
       <iframe src="https://embed.spotify.com/?uri=spotify:track:#{tweet.spotify_id}" width="250" height="330" frameborder="0" allowtransparency="true"></iframe>
     .track_details
       .user
@@ -25,10 +29,6 @@
 
       %div
         = tweet.text
-
-      / %p
-      /   Keyword:
-      /   = tweet.label
 
       %h3
         Track:

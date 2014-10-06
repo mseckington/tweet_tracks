@@ -7,6 +7,9 @@ class HomepageController < ApplicationController
     @tweets = Tweet.all.order('created_at DESC').limit(10)
   end
 
+  def about
+  end
+
   def search
     @searchword = params[:user]
 

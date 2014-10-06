@@ -1,5 +1,5 @@
 h1 {
-  font-size: 85px;
+  font-size: 92px;
   margin-bottom: 0px;
 }
 
@@ -65,8 +65,9 @@ h1 {
 }
 
 .update {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  height: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .update_button {
@@ -97,6 +98,20 @@ a.update_button:hover {
   -webkit-border-radius:20px;
   border: 2px solid #81b71a;
   padding-left: 20px;
+}
+
+.hack_description {
+  padding-left: 80px;
+  width: 470px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.search_description{
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 40px;
+  width: 466px;
 }
 
 .about {
