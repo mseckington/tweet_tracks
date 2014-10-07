@@ -11,13 +11,18 @@
 
 .about
   %p
-    Tweet Tracks is a hack created by Melinda Seckington for
-    = link_to "Hackference 2014,", "http://hackference.co.uk/"
+    Tweet Tracks is a hack created by Melinda Seckington
+    = surround '(', ')' do
+      = link_to "@mseckington", "https://twitter.com/mseckington"
+    for
+    = succeed ',' do
+      = link_to "Hackference 2014", "http://hackference.co.uk/"
     generating Spotify playlists based on your tweets.
 
   %p
     It uses the
     = link_to "dataTXT api from dandelion", "https://dandelion.eu/products/datatxt/nex/demo/"
     to extract entities (places, people, events, etc) from tweets and uses those keywords to find tracks on
-    = link_to "Spotify.", "https://www.spotify.com"
+    = succeed '.' do
+      = link_to "Spotify", "https://www.spotify.com"
     The first tab 'Home' displays the tracks based on my Home Timeline tweets, while the 'Search' tab gives you the option to search for any Twitter user.

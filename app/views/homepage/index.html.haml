@@ -13,7 +13,8 @@
     = image_tag("https://pbs.twimg.com/profile_images/483000143600685056/xdFJ3p4e_normal.jpeg")
   .hack_description
     This is a Spotify playlist generated from tweets in
-    = link_to "@mseckington's", "https://twitter.com/mseckington"
+    = succeed "'s" do
+      = link_to "@mseckington", "https://twitter.com/mseckington"
     Twitter home timeline.
 
 - @tweets.each do |tweet|
